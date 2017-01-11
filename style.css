@@ -1,0 +1,117 @@
+
+/* minimal css reset */
+html, body, div, h1, h2, h3, a, p, img, dl, dt, dd, ul, li {
+	padding: 0; margin: 0; border: 0; outline: 0;
+}
+
+/* Fonts */
+
+.titles svg text{
+	font-family: 'Quattrocento', serif;
+}
+
+.body svg text{
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.icons svg text {
+   font-family: FontAwesome;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#sidebar {
+	padding: 20px;
+	float: left;
+	position: fixed;
+	width: 260px;
+	height: 100%;
+	background: #AAAAAA;
+}
+
+#sidebar h1 {
+	font-family: 'Quattrocento', serif;
+	color: #f1f1f1;
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+#sidebar p {
+	margin-bottom: 10px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	color: #f1f1f1;
+	font-size: 11pt;
+}
+
+#content{
+	float: right;
+	width: 600px;
+	min-height: 100%;
+	background: #f1f1f1;
+}
+
+#legend {
+	margin: 40px auto 0 auto;
+	display: block
+}
+
+
+
+
+#credit {
+	padding-bottom: 25px;
+	padding-left: 20px;
+	margin-top: 25px;
+}
+
+#credit p {
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+
+.credit-bold {
+	font-family: 'Quattrocento', serif;
+	font-size: 0.8em;
+}
+
+.credit-note {
+	font-family: 'Quattrocento Sans', sans-serif;
+	line-height: 140%;
+	font-size: 0.6em;
+}
+
+
+@media screen and (max-width: 1790px) {
+	#wrapper{width: 1500px;}
+	#content{width: 1200px;}
+}
+
+@media screen and (max-width: 1490px) {
+	#wrapper{width: 1200px;}
+	#content{width: 900px;}
+}
+
+@media screen and (max-width: 1190px){
+	#wrapper{width: 900px;}
+	#content{width: 600px;}
+}
+
+@media screen and (max-width: 890px) {
+	#wrapper{width: 600px;}
+	#content{width: 300px;}
+}
+
+@media screen and (max-width: 590px) {
+	#wrapper{width: 300px;}
+	#sidebar{float: none; position: inherit; padding-bottom: 50px;}
+	#content{float: none;}
+}
+
+
+
+
+
+
