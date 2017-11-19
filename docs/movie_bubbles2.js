@@ -11,7 +11,7 @@ var svg = d3.select("#chart")
 
 var radiusScale = d3.scaleSqrt().domain([1, 4692]).range([1, 40])
 
-var forceXSplit = d3.forceX(d => width * (d.Sex === "male" ? 0.3 : 0.7))
+var forceXSplit = d3.forceX(d => width * (d.Gender === "male" ? 0.3 : 0.7))
         .strength(0.2);
 
 var forceXCombine = d3.forceX((width)/2).strength(0.1)
@@ -45,7 +45,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "CivilWar.csv")
+	.defer(d3.csv, "../CivilWar.csv")
 	.await(ready)
 
 
@@ -65,7 +65,7 @@ function ready (error, datapoints) {
 	.attr("r", function(d){
 		return radiusScale(d.Total_Words)
 	})
-	.style("fill", d => d.Sex === "male" ? "#3b3f93" : "#ff4a6b")
+	.style("fill", d => d.Gender === "male" ? "#3b3f93" : "#ff4a6b")
 	.on("mouseover", function(d) {
               tooltip.html(d.Character + "<br><br> Words Spoken: " + d.Total_Words);
               tooltip.style("visibility", "visible");
@@ -258,7 +258,7 @@ var svg = d3.select("#chart")
 
 var radiusScale = d3.scaleSqrt().domain([1, 4692]).range([1, 40])
 
-var forceXSplit = d3.forceX(d => width * (d.Sex === "male" ? 0.3 : 0.7))
+var forceXSplit = d3.forceX(d => width * (d.Gender === "male" ? 0.3 : 0.7))
         .strength(0.2);
 
 var forceXCombine = d3.forceX((width)/2).strength(0.1)
@@ -290,7 +290,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "FindingDory.csv")
+	.defer(d3.csv, "../FindingDory.csv")
 	.await(ready)
 
 
@@ -310,7 +310,7 @@ function ready (error, datapoints) {
 	.attr("r", function(d){
 		return radiusScale(d.Total_Words)
 	})
-	.style("fill", d => d.Sex === "male" ? "#3b3f93" : "#ff4a6b")
+	.style("fill", d => d.Gender === "male" ? "#3b3f93" : "#ff4a6b")
 	.on("mouseover", function(d) {
               tooltip.html(d.Character + "<br><br> Words Spoken: " + d.Total_Words);
               tooltip.style("visibility", "visible");
@@ -505,7 +505,7 @@ var svg = d3.select("#chart")
 
 var radiusScale = d3.scaleSqrt().domain([1, 4692]).range([1, 40])
 
-var forceXSplit = d3.forceX(d => width * (d.Sex === "male" ? 0.3 : 0.7))
+var forceXSplit = d3.forceX(d => width * (d.Gender === "male" ? 0.3 : 0.7))
         .strength(0.2);
 
 var forceXCombine = d3.forceX((width)/2).strength(0.1)
@@ -537,7 +537,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "Zootopia.csv")
+	.defer(d3.csv, "../Zootopia.csv")
 	.await(ready)
 
 
@@ -557,7 +557,7 @@ function ready (error, datapoints) {
 	.attr("r", function(d){
 		return radiusScale(d.Total_Words)
 	})
-	.style("fill", d => d.Sex === "male" ? "#3b3f93" : "#ff4a6b")
+	.style("fill", d => d.Gender === "male" ? "#3b3f93" : "#ff4a6b")
 	.on("mouseover", function(d) {
               tooltip.html(d.Character + "<br><br> Words Spoken: " + d.Total_Words);
               tooltip.style("visibility", "visible");
@@ -750,7 +750,7 @@ var svg = d3.select("#chart")
 
 var radiusScale = d3.scaleSqrt().domain([1, 4692]).range([1, 40])
 
-var forceXSplit = d3.forceX(d => width * (d.Sex === "male" ? 0.3 : 0.7))
+var forceXSplit = d3.forceX(d => width * (d.Gender === "male" ? 0.3 : 0.7))
         .strength(0.2);
 
 var forceXCombine = d3.forceX((width)/2).strength(0.1)
@@ -782,7 +782,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "Junglebook.csv")
+	.defer(d3.csv, "../JungleBook.csv")
 	.await(ready)
 
 
@@ -802,7 +802,7 @@ function ready (error, datapoints) {
 	.attr("r", function(d){
 		return radiusScale(d.Total_Words)
 	})
-	.style("fill", d => d.Sex === "male" ? "#3b3f93" : "#ff4a6b")
+	.style("fill", d => d.Gender === "male" ? "#3b3f93" : "#ff4a6b")
 	.on("mouseover", function(d) {
               tooltip.html(d.Character + "<br><br> Words Spoken: " + d.Total_Words);
               tooltip.style("visibility", "visible");
@@ -994,7 +994,7 @@ var svg = d3.select("#chart")
 
 var radiusScale = d3.scaleSqrt().domain([1, 4692]).range([1, 40])
 
-var forceXSplit = d3.forceX(d => width * (d.Sex === "male" ? 0.3 : 0.7))
+var forceXSplit = d3.forceX(d => width * (d.Gender === "male" ? 0.3 : 0.7))
         .strength(0.2);
 
 var forceXCombine = d3.forceX((width)/2).strength(0.1)
@@ -1026,7 +1026,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "SecretLifeofPets.csv")
+	.defer(d3.csv, "../SecretLifeofPets.csv")
 	.await(ready)
 
 
@@ -1046,7 +1046,7 @@ function ready (error, datapoints) {
 	.attr("r", function(d){
 		return radiusScale(d.Total_Words)
 	})
-	.style("fill", d => d.Sex === "male" ? "#3b3f93" : "#ff4a6b")
+	.style("fill", d => d.Gender === "male" ? "#3b3f93" : "#ff4a6b")
 	.on("mouseover", function(d) {
               tooltip.html(d.Character + "<br><br> Words Spoken: " + d.Total_Words);
               tooltip.style("visibility", "visible");
@@ -1240,7 +1240,7 @@ var svg = d3.select("#chart")
 
 var radiusScale = d3.scaleSqrt().domain([1, 4692]).range([1, 40])
 
-var forceXSplit = d3.forceX(d => width * (d.Sex === "male" ? 0.3 : 0.7))
+var forceXSplit = d3.forceX(d => width * (d.Gender === "male" ? 0.3 : 0.7))
         .strength(0.2);
 
 var forceXCombine = d3.forceX((width)/2).strength(0.1)
@@ -1272,7 +1272,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "BatmanVSuperman.csv")
+	.defer(d3.csv, "../BatmanVSuperman.csv")
 	.await(ready)
 
 
@@ -1292,7 +1292,7 @@ function ready (error, datapoints) {
 	.attr("r", function(d){
 		return radiusScale(d.Total_Words)
 	})
-	.style("fill", d => d.Sex === "male" ? "#3b3f93" : "#ff4a6b")
+	.style("fill", d => d.Gender === "male" ? "#3b3f93" : "#ff4a6b")
 	.on("mouseover", function(d) {
               tooltip.html(d.Character + "<br><br> Words Spoken: " + d.Total_Words);
               tooltip.style("visibility", "visible");
@@ -1487,7 +1487,7 @@ var svg = d3.select("#chart")
 
 var radiusScale = d3.scaleSqrt().domain([1, 4692]).range([1, 40])
 
-var forceXSplit = d3.forceX(d => width * (d.Sex === "male" ? 0.3 : 0.7))
+var forceXSplit = d3.forceX(d => width * (d.Gender === "male" ? 0.3 : 0.7))
         .strength(0.2);
 
 var forceXCombine = d3.forceX((width)/2).strength(0.1)
@@ -1519,7 +1519,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "RogueOne.csv")
+	.defer(d3.csv, "../RogueOne.csv")
 	.await(ready)
 
 
@@ -1539,7 +1539,7 @@ function ready (error, datapoints) {
 	.attr("r", function(d){
 		return radiusScale(d.Total_Words)
 	})
-	.style("fill", d => d.Sex === "male" ? "#3b3f93" : "#ff4a6b")
+	.style("fill", d => d.Gender === "male" ? "#3b3f93" : "#ff4a6b")
 	.on("mouseover", function(d) {
               tooltip.html(d.Character + "<br><br> Words Spoken: " + d.Total_Words);
               tooltip.style("visibility", "visible");
@@ -1732,7 +1732,7 @@ var svg = d3.select("#chart")
 
 var radiusScale = d3.scaleSqrt().domain([1, 4692]).range([1, 40])
 
-var forceXSplit = d3.forceX(d => width * (d.Sex === "male" ? 0.3 : 0.7))
+var forceXSplit = d3.forceX(d => width * (d.Gender === "male" ? 0.3 : 0.7))
         .strength(0.2);
 
 var forceXCombine = d3.forceX((width)/2).strength(0.1)
@@ -1764,7 +1764,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "Deadpool.csv")
+	.defer(d3.csv, "../Deadpool.csv")
 	.await(ready)
 
 
@@ -1784,7 +1784,7 @@ function ready (error, datapoints) {
 	.attr("r", function(d){
 		return radiusScale(d.Total_Words)
 	})
-	.style("fill", d => d.Sex === "male" ? "#3b3f93" : "#ff4a6b")
+	.style("fill", d => d.Gender === "male" ? "#3b3f93" : "#ff4a6b")
 	.on("mouseover", function(d) {
               tooltip.html(d.Character + "<br><br> Words Spoken: " + d.Total_Words);
               tooltip.style("visibility", "visible");
@@ -1978,7 +1978,7 @@ var svg = d3.select("#chart")
 
 var radiusScale = d3.scaleSqrt().domain([1, 4692]).range([1, 40])
 
-var forceXSplit = d3.forceX(d => width * (d.Sex === "male" ? 0.3 : 0.7))
+var forceXSplit = d3.forceX(d => width * (d.Gender === "male" ? 0.3 : 0.7))
         .strength(0.2);
 
 var forceXCombine = d3.forceX((width)/2).strength(0.1)
@@ -2030,7 +2030,7 @@ function ready (error, datapoints) {
 	.attr("r", function(d){
 		return radiusScale(d.Total_Words)
 	})
-	.style("fill", d => d.Sex === "male" ? "#3b3f93" : "#ff4a6b")
+	.style("fill", d => d.Gender === "male" ? "#3b3f93" : "#ff4a6b")
 	.on("mouseover", function(d) {
               tooltip.html(d.Character + "<br><br> Words Spoken: " + d.Total_Words);
               tooltip.style("visibility", "visible");
@@ -2225,7 +2225,7 @@ var svg = d3.select("#chart")
 
 var radiusScale = d3.scaleSqrt().domain([1, 4692]).range([1, 40])
 
-var forceXSplit = d3.forceX(d => width * (d.Sex === "male" ? 0.3 : 0.7))
+var forceXSplit = d3.forceX(d => width * (d.Gender === "male" ? 0.3 : 0.7))
         .strength(0.2);
 
 var forceXCombine = d3.forceX((width)/2).strength(0.1)
@@ -2277,7 +2277,7 @@ function ready (error, datapoints) {
 	.attr("r", function(d){
 		return radiusScale(d.Total_Words)
 	})
-	.style("fill", d => d.Sex === "male" ? "#3b3f93" : "#ff4a6b")
+	.style("fill", d => d.Gender === "male" ? "#3b3f93" : "#ff4a6b")
 	.on("mouseover", function(d) {
               tooltip.html(d.Character + "<br><br> Words Spoken: " + d.Total_Words);
               tooltip.style("visibility", "visible");

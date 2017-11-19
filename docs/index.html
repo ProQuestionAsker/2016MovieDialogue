@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<!--The browser can use non-English-language characters (...kind of) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Quattrocento:700|Quattrocento+Sans" rel="stylesheet">
+		<meta charset="utf-8">
+		<style>
+		* 
+	
+		svg {
+			background: #f1f1f1;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+
+		<div id="sidebar">
+			<h1>Gender Equality and Dialogue in 2016’s Highest Grossing Films</h1>
+			<p>In 2016, several new releases contained a female lead, but did females occupy as many roles or speak as much as male characters? To find out, I analyzed the word count for every speaking character in 2016’s  Top 10 Worldwide Highest Grossing Films.</p>
+			<p>Every circle in the figure to the right represents a single speaking character. Each circle is scaled based on the number of words spoken by that character.</p>
+			<img id="legend" src="SidebarLegend.png" height="212" width="181" />
+			
+		</div>	
+
+		<div id="content">
+			<div id="chart"></div>
+			<div id="credit">
+			<p class="credit-bold">Created by <a href="https://twitter.com/ProQuesAsker" target="_new">Amber Thomas</a> </p>
+			<p class="credit-note">Worldwide Movie Gross from <a href="http://www.the-numbers.com/movie/records/worldwide/2016" target="_new">The Numbers</a>.</p> 
+			<p class="credit-note">Word counts from movie transcripts. Process described <a href="https://proquestionasker.github.io/projects/moviedialogue/" target="_new">here</a>.</p>
+			
+
+
+
+		</div>
+
+		<!-- This is D3 our graphing library -->
+		<script src="https://d3js.org/d3.v4.js"></script>
+	
+
+		<!--Now we include our actual visualization -->
+
+		<script src="movie_bubbles2.js"></script>
+	</div>
+	</body>
+</html>	

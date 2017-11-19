@@ -106,7 +106,7 @@ html, body, div, h1, h2, h3, a, p, img, dl, dt, dd, ul, li {
 
 @media screen and (max-width: 590px) {
 	#wrapper{width: 300px;}
-	#sidebar{float: none; position: inherit; padding-bottom: 50px;}
+	#sidebar{float: none; position: inherit;}
 	#content{float: none;}
 }
 
