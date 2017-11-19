@@ -45,7 +45,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "../CivilWar.csv")
+	.defer(d3.csv, "CivilWar.csv")
 	.await(ready)
 
 
@@ -290,7 +290,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "../FindingDory.csv")
+	.defer(d3.csv, "FindingDory.csv")
 	.await(ready)
 
 
@@ -537,7 +537,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "../Zootopia.csv")
+	.defer(d3.csv, "Zootopia.csv")
 	.await(ready)
 
 
@@ -782,7 +782,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "../JungleBook.csv")
+	.defer(d3.csv, "JungleBook.csv")
 	.await(ready)
 
 
@@ -1026,7 +1026,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "../SecretLifeofPets.csv")
+	.defer(d3.csv, "SecretLifeofPets.csv")
 	.await(ready)
 
 
@@ -1272,7 +1272,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "../BatmanVSuperman.csv")
+	.defer(d3.csv, "BatmanVSuperman.csv")
 	.await(ready)
 
 
@@ -1519,7 +1519,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "../RogueOne.csv")
+	.defer(d3.csv, "RogueOne.csv")
 	.await(ready)
 
 
@@ -1764,7 +1764,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.queue()
-	.defer(d3.csv, "../Deadpool.csv")
+	.defer(d3.csv, "Deadpool.csv")
 	.await(ready)
 
 
